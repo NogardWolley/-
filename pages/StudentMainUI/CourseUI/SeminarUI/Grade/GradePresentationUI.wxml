@@ -1,0 +1,27 @@
+<!--pages/StudentMainUI/CourseUI/SeminarUI/Grade/GradePresentationUI.wxml-->
+<import class="score.wxss" />
+
+<view class="seminarblock" style='display: {{gradeWait}}'>
+  <span class="column0">
+    <image class="seminarimg" src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp0x4wnj201n01nglr.jpg" />
+  </span>
+  <label class='greyword'>请为别的小组展示打分</label>
+</view>
+
+<view class="seminarblock" style='display: {{gradeDone}}'>
+  <span class="column0">
+    <image class="seminarimg" src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp0x4wnj201n01nglr.jpg" />
+  </span>
+  <label class='greyword'>您的打分结果</label>
+</view>
+
+<view class="scoremargin">
+  <view wx:for='{{heartList}}' data-clickgroup='{{index}}' bindtap='clickHeart'>
+    <label>{{groupList[index].id}}</label>
+    <image class='heart' wx:for='{{item}}' wx:for-item='heart' src='{{heart}}' data-click='{{index}}'></image>
+  </view>
+
+  <view style='display: {{gradeWait}}'>
+    <button class="btnsubmit" bindtap='GradeSubmit'>提交</button>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/StudentMainUI/CourseUI/SeminarUI/RandomGroup/RandomGroupChooseTopicUI.wxml-->
+<page>
+  <!--设置左上角的usersIcon-->
+  <view class="blueUsersView">
+    <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp0x4wnj201n01nglr.jpg" class='blueUsersIcon' />
+    <strong>请为您的队伍选题</strong>
+  </view>
+
+  <!--细线，hr不好设置css，用一个高度很小的view来代替-->
+  <view class="hrView">
+  </view>
+
+  <!--当选题未选完时框是蓝色的，要增加新框就直接复制-->
+   <view wx:for='{{Topic}}'> 
+    <view class="blueTopicView" catchtap='DisBind' style='background-color: {{color[index]}};' data-select='{{index}}'>
+      <span class="topic">{{item.name}}</span>
+      <view class="hrVertical"> </view>
+      <span class="topicName">{{Topic[index].description}}</span>
+      <!--剩余选题数量大于等于2时-->
+      <span class="leftNumWhite">剩余 ： {{Topic[index].groupLeft}}/{{Topic[index].groupLimit}}</span>
+      <image src='http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp5nwpcj200q00qq2q.jpg' class="nineIcon" catchtap='unflodDescriptions' data-des='{{index}}'></image>
+    </view>
+     <view class="topicDescribeView" style='display: {{descriptionDisplay[index]}}'>
+      <span class="topicDescribeTitle">
+        {{Topic[index].description}}
+      </span>
+      <span class="topicDescribeText">
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </span>
+    </view> 
+   </view>
+</page>

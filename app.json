@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/StudentMainUI/CheckStudentInfoUI",
+    "pages/CheckTeacherInfoUI",
+    "pages/TeacherBindingUI/TeacherBindingUI",
+    "pages/ChooseSchool/ChooseSchool",
+    "pages/StudentBindingUI/StudentBindingUI",
+    "pages/StudentMainUI",
+    "pages/StudentMainUI/CourseUI/SeminarUI/RandomGroup/RandomGroupNoLeaderUI",
+    "pages/StudentMainUI/CourseUI/SeminarUI",
+    "pages/StudentMainUI/CourseUI/SeminarUI/Grade/GradePresentationUI",
+    "pages/StudentMainUI/CourseUI",
+    "pages/TeacherMainUI",
+    "pages/ClassManage/ClassManage",
+    "pages/StudentMainUI/CourseUI/SeminarUI/RandomGroup/RandomGroupChooseTopicUI",
+    "pages/FixedRollCallUI/FixedRollStartCallUI",
+    "pages/RandomRollCallUI/RandomRollStartCallUI",
+    "pages/ChooseCharacter/ChooseCharacter",
+    "pages/GroupInfoUI/GroupInfoUI",
+    "pages/RollCallListUI/RollCallListUI",
+    "pages/FixedRollCallUI/FixedRollCallUI",
+    "pages/CreateSchoolUI/CreateSchoolUI",
+    "pages/RandomRollCallUI/RandomRollCallUI",
+    "pages/StudentMainUI/CourseUI/CourseInfoUI",
+    "pages/StudentMainUI/CourseUI/SeminarUI/RollCall/RollCallUI",
+    "pages/StudentMainUI/CourseUI/SeminarUI/FixedGroup/FixedGroupNoLeaderUI",
+    "pages/StudentMainUI/CourseUI/SeminarUI/FixedGroup/FixedGroupChooseTopicUI"
+  ],
+  "window": {
+    "navigationBarTitleText": "课堂管理系统",
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTextStyle": "White",
+    "backgroundTextStyle": "dark"
+  }
+}

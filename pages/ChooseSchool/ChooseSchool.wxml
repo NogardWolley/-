@@ -1,0 +1,34 @@
+<page style="background=#000000">
+  <view class="PictureView" style="position:relative;">
+    <!-- 背景图的view -->
+    <image class="bulb" src="http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp2yhy7j202a02aaa0.jpg" />
+    <image class="Picture" src="http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp2k8llj20sg0hiago.jpg" />
+    <view class="Title">请选择您的学校</view>
+  </view>
+  <view class="MidView" style="background-color: =#66CCFF;">
+    <button class="MidButton" bindtap='selectPriList'>{{priText}}</button>
+    <button class="MidButton" bindtap='selectCityList'>{{cityText}}</button>
+    <button class="MidButton" bindtap='selectSchoolList'>{{schoolText}}</button>
+  </view>
+  <view class="LowView">
+
+    <view style='height: auto; width: 100%; display: {{priHeight}};'>
+      <button class="ItemButton" wx:for='{{priList}}' bindtap='selectPri' data-selected='{{index}}'>
+        {{item}}
+      </button>
+    </view>
+    <view style='height: auto; width: 100%; display: {{cityHeight}}'>
+      <button class="ItemButton" wx:for='{{cityList}}' bindtap='selectCity' data-selected='{{index}}'>
+        {{item}}
+      </button>
+    </view>
+    <view style='height: auto; width: 100%; display: {{schoolHeight}}'>
+      <button class="ItemButton" wx:for='{{schoolList}}' bindtap='selectSchool' data-selected='{{index}}'>
+        {{item.name}}
+      </button>
+      <button class="ItemButton" style='color: blue; text-decoration: underline' bindtap='naviToCreateSchoolUI'>
+        无学校？选择创建
+      </button>
+    </view>
+  </view>
+</page>

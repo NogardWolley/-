@@ -1,0 +1,32 @@
+<page>
+  <!--设置左上角的蓝色板-->
+  <view class="blueBoardView">
+    <image src="http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp6074bj2035036jr7.jpg" class='blueBoardIcon' />
+  </view>
+
+
+  <!--班级1 的字样-->
+  <view class='classNameView'>
+    {{class}}
+  </view>
+
+  <!--学生总数：40 的字样-->
+  <view class='studentSumView'>
+    签到人数：{{callRollNumber}}/{{totalNumber}}
+  </view>
+
+
+  <!--学生名单上面那个蓝色的bar-->
+  <view class='studentListBarView'>
+    已签到人员
+  </view>
+
+  <!--学生块，分为左边的和右边的，增加学生的时候选择好左边或者
+右边后直接复制就好，之后在span下面修改学生名字-->
+<view style='margin-left: 5%;'>
+  <view style='background-color: #fff;width: 47%;float: left;border-radius: 12rpx;color: black;height: 100rpx;' wx:for='{{callRollStudentList}}'>
+    <image src="http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp0lbj3j201k01g0pu.jpg" class='userIcon' />
+    <span class="studentName">{{item}}</span>
+  </view>
+</view>
+</page>

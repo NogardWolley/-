@@ -1,0 +1,40 @@
+<!--pages/StudentMainUI/CourseUI/SeminarUI/RandomGroup/RandomGroupNoLeaderUI.wxml-->
+<!--设置左上角的usersIcon-->
+  <view class="blueUsersView">
+    <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp0x4wnj201n01nglr.jpg" class='blueUsersIcon' />
+    <text class=".fontsize1" style="margin-left: 0%;margin-top: 3%" > 讨论课4</text>
+  	<text class=".fontsize2" style="margin-left: 0%;margin-top: 12%"> 固定分组</text>
+  </view>
+  <view class="TeamInformation">
+  <text class="fontsize3" style='flex:2;margin-left:5%'> 队伍信息：</text>
+  <view class='box1' style='flex:1;text-align:center;margin:2% 5% 3% 5%; display: {{haveLeader}};display: {{isLeader}}' bindtap='ChooseBecameMember'> 辞职</view>
+  </view>
+
+  <!--队伍信息方块-->
+  <view class='box2' style='margin-top:2%'>
+  <image src="http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp0lbj3j201k01g0pu.jpg" class='UsersIcon'/>
+  
+  <text class=".fontsize1" style="margin-left: 0%;margin-top: 3%" > {{Member.leader.name}}</text>
+  <text class=".fontsize1" style="margin-left: 0%;margin-top: 8%">{{Member.leader.number}}</text>
+  <text class=".fontsize4" style="margin-left: 40%;margin-top: 3%;display: {{haveLeader}}"> 队长</text>
+  </view>
+
+  <view style='display: {{haveLeader}}'>
+  <view style='margin-top:10%'></view>
+  </view>
+
+  <view class='box2' style='margin-top:1%' wx:for='{{MemberImage}}'>
+  <image src="{{MemberImage[index]}}" class='UsersIcon'/>
+  <text class=".fontsize1" style="margin-left: 0%;margin-top: 3%" >{{Member.members[index].name}}</text>
+  <text class=".fontsize1" style="margin-left: 0%;margin-top: 8%">{{Member.members[index].number}}</text>
+  </view>  
+
+  <view class="TeamInformation" style='margin-top:3%;display: {{noLeader}}' >
+  <text class="fontsize3" style='margin-left:5%'> 选题：</text>
+  </view>
+
+<view style='display: {{isLeader}}'>
+  <view style='display: {{haveLeader}}'>
+  <view class='box5' style='text-align:center;margin:10% 30% 3% 30%' bindtap='ChooseTopic'> 选题</view>
+  </view>
+  </view>

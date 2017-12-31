@@ -1,0 +1,52 @@
+<!--pages/StudentMainUI/CourseUI/SeminarUI/RollCall/RollCallUI.wxml-->
+<page>
+  <!--设置左上角的blueBoardIcon-->
+  <view class="blueUsersView">
+    <image src="http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp6074bj2035036jr7.jpg" class='blueUsersIcon' />
+    <strong>讨论课信息</strong>
+  </view>
+
+  <!--细线，hr不好设置css，用一个高度很小的view来代替-->
+  <view class="hrView">
+  </view>
+
+  <!--课堂信息，由一个icon和一行文字组成-->
+  <view class="courseInfoView">
+    <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp6lwqmj2017016jr7.jpg" class='courseInfoIcon' />
+    <strong>邱明</strong>
+  </view>
+  <view class="courseInfoView">
+    <image src="http://wx3.sinaimg.cn/mw690/9bba9548gy1fm6vpa4243j2019013744.jpg" class='courseInfoIcon' />
+    <strong>mingqiu@gmail.com</strong>
+  </view>
+  <view class="courseInfoView">
+    <image src="http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp84j0tj201c01bmwz.jpg" class='courseInfoIcon' />
+    <strong>2017-11-11</strong>
+  </view>
+  <view class="courseInfoView">
+    <image src="http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp3bsn7j2010017jr7.jpg" class='courseInfoIcon' />
+    <strong>海韵教学楼201</strong>
+  </view>
+
+  <!--签到按钮-->
+  <view style='display: {{callRollWait}}'>
+    <button type="button" class="blueBigBtn" bindtap='RollCall'>
+      签到
+    </button>
+  </view>
+
+  <view style='display: {{callRollLate}}'>
+    <view class="lateCall">
+      <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp6z65tj200q00rt8j.jpg" class='courseInfoIcon' />
+      <strong>迟到签到成功</strong>
+    </view>
+  </view>
+
+  <view style='display: {{callRollDone}}'>
+    <view class="successCall">
+      <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp6z65tj200q00rt8j.jpg" class='courseInfoIcon' />
+      <strong>签到成功</strong>
+    </view>
+  </view>
+
+</page>

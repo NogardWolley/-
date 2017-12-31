@@ -1,0 +1,18 @@
+<!--pages/StudentMainUI/CheckStudentInfoUI.wxml-->
+<page>
+  <view class="topBoardView" style="position:relative;" bindtap='PersonalInfo'>
+    <!-- 背景图的view -->
+    <image class="topIcon" src="http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp2k8llj20sg0hiago.jpg" />
+    <image class="topHead" src="http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp7q4n4j20p10p1mxl.jpg" />
+    <view class="topName" style="position:absolute; z-index:2; top:10px">姓名：{{StudentName}}</view>
+
+    <view class="topID" style="position:absolute; z-index:2; top:40px">学号：{{StudentNumber}}</view>
+  </view>
+  <view class='mainView'>
+    <text class="phone">手机号：{{PhoneNumber}}</text>
+    <text class="ID">学号：{{StudentNumber}}</text>
+    <text class="school">学校：{{School}}</text>
+    <text class="name">姓名：{{StudentName}}</text>
+    <button class="confirmButton" bindtap='DisBind'>解除绑定</button>
+   </view> 
+</page>

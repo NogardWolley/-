@@ -1,0 +1,20 @@
+<!-- 上方风景模块 -->
+<view class='topBoardView'>
+  <image class='topIcon' src='http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp2k8llj20sg0hiago.jpg'></image>
+  <image class='topLight' src='http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp2yhy7j202a02aaa0.jpg'></image>
+  <image class='topLine' src='http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp9oh13j20fo00gmx4.jpg'></image>
+  <text class='topTips'>请选择您的账号类型</text>
+</view>
+<!-- 下方选择模块 -->
+<view class='mainView'>
+  <text class='ID'>学号：</text>
+  <input class='inputID' bindblur='idInputDone'></input>
+  <text class='name'>姓名：</text>
+  <input class='inputName' bindblur='nameInputDone'></input>
+  <text class='school'>学校：</text>
+  <text class='inputSchool'>{{school}}</text>
+  <image class='selectSchoolIcon' bindtap='naviToChooseSchool'src='http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp5nwpcj200q00qq2q.jpg'></image>
+  <button class='confirmButton' bindtap='naviToStudentMainUI'>绑定</button>
+  <image class='tipIcon' src='http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp8o4rpj201e01e0sk.jpg'></image>
+  <text class='tipFont'>提交后不能修改</text>
+</view>

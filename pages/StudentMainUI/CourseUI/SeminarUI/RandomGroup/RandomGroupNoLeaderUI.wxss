@@ -1,0 +1,104 @@
+/* pages/StudentMainUI/CourseUI/SeminarUI/RandomGroup/RandomGroupNoLeaderUI.wxss */
+/* 背景色 */
+page {
+  background: rgba(102, 204, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* 左上角的users图标和文字的容器*/
+
+.blueUsersView {
+  width: 100%;
+  height: 15%;
+  float: left;
+  margin-top: 5%;
+  margin-left: 10%;
+  
+}
+.fontsize1{
+	position: absolute;
+	color: black;
+	margin-left: 30%;
+	margin-top: 50px;
+font-size: 30rpx;
+}
+.fontsize2{
+	position: absolute;
+	color: black;
+	margin-left: 30%;
+	margin-top: 50px;
+font-size: 50rpx;
+}
+
+/* 左上角的蓝色users图标大小*/
+.blueUsersIcon {
+  width: 20%;
+  height: 100%;
+  margin-right: 10%;
+  margin-top: 50%；;
+}
+
+.fontsize3
+{
+	font-size: 60rpx;
+	color: #FFFFFF;
+}
+.TeamInformation
+{
+  width: 100%;
+	display:flex;
+  flex-direction: row;
+}
+
+
+.box1
+{
+  font-size: 40rpx;
+	color: #FFFFFF;
+	background-color:#66CCFF;
+	border-radius: 15px;	
+}
+.box2
+{
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 10%;
+  background-color:#FFFFFF;
+	border-radius: 15px;
+}
+/*用户图片*/
+.UsersIcon {
+  width: 20%;
+  height: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.fontsize4{
+	position: absolute;
+	color:#66CCFF;
+	margin-left: 30%;
+	margin-top: 50px;
+font-size: 50rpx;
+}
+.box3
+{
+  font-size: 60rpx;
+	color: #FFFFFF;
+	background-color:#66CCFF;
+	border-radius: 15px;	
+}
+.box4
+{
+  color:red;
+  font-size: 30rpx;
+  
+}
+.box5
+{
+  font-size: 60rpx;
+	color: #FFFFFF;
+	background-color:#66CCFF;
+	border-radius: 15px;	
+}

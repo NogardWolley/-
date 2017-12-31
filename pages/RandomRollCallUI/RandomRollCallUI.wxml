@@ -1,0 +1,12 @@
+<view class='topBoardView'>
+  <image class='Calendar ' src='http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp6074bj2035036jr7.jpg'></image>
+  <text class='Classes'>班级1</text>
+  <text class='StudentNumber'>学生总数：400</text>
+  <image class='Line ' src='http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp9oh13j20fo00gmx4.jpg'></image>
+  <image class='users ' src='http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp0x4wnj201n01nglr.jpg'></image>
+  <text class='arrivedstu'>已签到学生数：0/40</text>
+  <button class='EndRandomCall' bindtap='EndRandomCall'>结束签到</button>
+  <button class='SearchGroup' bindtap='SearchGroup'>查看分组</button>
+  <button class='RollCallList' bindtap='RollCallList'>签到名单</button>
+  <text class='tips'>随机分组还未开始，不能查看分组</text>
+</view>

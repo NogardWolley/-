@@ -1,0 +1,18 @@
+<view class='topBoardView'>
+  <image class='Calendar ' src='http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp6074bj2035036jr7.jpg'></image>
+  <text class='Classes'>班级1</text>
+  <text class='StudentNumber'>学生总数：400</text>
+  <image class='Line ' src='http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp9oh13j20fo00gmx4.jpg'></image>
+  <image class='users ' src='http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp0x4wnj201n01nglr.jpg'></image>
+  <text class='arrivedstu'>已签到学生数：{{callRollNumber}}/{{totalNumber}}</text>
+  <view style='display: {{callRollWait}}'>
+    <button class='StartRandomCall' bindtap='StartRandomCall'>开始签到</button>
+    <button class='SearchGroup'>查看分组</button>
+  </view>
+  <view style='display: {{callRollDone}}'>
+  <button style='position: absolute;font-size: 40rpx;-webkit-text-fill-color: white;background-color: #6ce;width:290rpx;height:110rpx;margin-left: 30%;margin-top:90%;'bindtap='GroupList'>查看分组</button>
+  </view>
+  <view style='display: {{callRollWait}}'>
+    <text class='tips'>随机分组还未开始，不能查看分组</text>
+  </view>
+</view>

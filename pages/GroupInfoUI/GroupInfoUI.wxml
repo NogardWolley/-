@@ -1,0 +1,49 @@
+<page>
+  <!--设置左上角的usersIcon-->
+  <view class="blueUsersView">
+    <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp0x4wnj201n01nglr.jpg" class='blueUsersIcon' />
+    <strong>队伍信息</strong>
+  </view>
+
+
+  <!--细线，hr不好设置css，用一个高度很小的view来代替-->
+  <view class="hrView"></view>
+
+
+  <!--学生名单上面那个蓝色的bar-->
+  <view style='padding-top:25%;'>
+    <view style='float: center;' wx:for='{{groupList}}'>
+      <view class='studentListBarView'>
+        <span style='float: left; margin-left: 1%;'>{{item.name}}</span>
+        <span class="groupTopics">选题：{{item.title}}</span>
+      </view>
+      <view style='margin-left: 5%;margin-top:1%;' bindtap='delet' data-group='{{index}}'>
+        <view class='studentLeftBlock' wx:for='{{item.member}}' wx:for-item='member'>
+          <image src="http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp0lbj3j201k01g0pu.jpg" class='userIcon' />
+          <span class="studentName">{{member}}</span>
+          <image src="{{redX}}" class='redCancelIcon' style='display: {{item.redXList[index]}}' data-deleti='{{index}}' />
+        </view>
+        <view class='studentRightBlock' bindtap='select' data-i='{{index}}'>
+          <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp57gcmj201e01d3y9.jpg" class='addIcon' />
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+  <view>
+    <!--迟到学生上面那个蓝色的bar-->
+    <view class='studentNoCallBarView'>
+      <span>未签到学生</span>
+      <!--未签到学生，要增加新学生复制一个view，修改名字-->
+    </view>
+    <view style='margin-left: 5%;'>
+      <view class='studentLeftBlock' wx:for='{{notCallRollStudentList}}'>
+        <image src="http://wx4.sinaimg.cn/small/9bba9548gy1fm6vp0lbj3j201k01g0pu.jpg" class='userIcon' />
+        <span class="studentName">{{item}}</span>
+      </view>
+    </view>
+  </view>
+</page>

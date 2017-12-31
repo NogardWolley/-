@@ -1,0 +1,16 @@
+<!-- 上方风景模块 -->
+<view class='topBoardView'>
+  <text class='topTips'>{{ClassName}}</text>
+  <text class='Seminar'>{{ClassTime}}</text>
+</view>
+<!-- 下方选择模块 -->
+<view class='mainView'>
+  <image class='Clock' src='http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp6z65tj200q00rt8j.jpg'></image>
+  <text class='Time'>{{classPeriod}}</text>
+  <image class='Pin' src='http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp7bok6j200i00t0ew.jpg'></image>
+  <text style='position: absolute;font-size: 30rpx;margin-left: 66%;margin-top: 4%;z-index: 2;'>{{groupStyle}}</text>
+</view>
+<view wx:for='{{classList}}' style='margin-top: 12%; margin-left: 5%; display: inline-block;width: 320rpx; height: 350rpx;'>
+    <image src="http://wx2.sinaimg.cn/small/9bba9548gy1fm6vp1hkp4j204503xjr8.jpg" style='width: 320rpx; height: 350rpx;' bindtap="selectClass" data-i='{{index}}'/>
+    <p style='margin-left: 36%; font-size: 30rpx;'>{{item}}</p>
+</view>

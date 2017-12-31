@@ -1,0 +1,22 @@
+<!--pages/StudentMainUI/CourseUI.wxml-->
+<page class="page">
+<view class="head20" bindtap='CheckCourseInfo'>
+	<text class="FONT1"> {{ClassName}}</text>
+	</view>
+<view class="box3" bindtap='ChooseSeminar'>
+	<text class="FONT12" > {{SeminarInfo[Range].name}}</text><!--蓝色选择框-->
+	<text class="FONT2" style="margin-left: 60%;margin-top: 3%" > {{SeminarInfo[Range].starTime}}-{{SeminarInfo[Range].endTime}}</text>
+	<text class="FONT2" style="margin-left: 60%;margin-top: 12%"> {{SeminarInfo[Range].groupingMethod}}</text>
+	<text class="FONT2" style="margin-left: 60%;margin-top: 21%"> 成绩：{{GradeState}}</text>
+	</view>
+	
+<view class="box4" wx:for='{{Seminar}}'> <!--灰色选择框-->
+	<text class="FONT12"> {{SeminarInfo[Range-1-index].name}}</text>
+	<text class="FONT2" style="margin-left: 60%;margin-top: 3%" >{{SeminarInfo[Range-1-index].starTime}}-{{SeminarInfo[Range-1-index].endTime}}</text>
+	<text class="FONT2" style="margin-left: 60%;margin-top: 12%"> {{SeminarInfo[Range-1-index].groupingMethod}}</text>
+	<text class="FONT2" style="margin-left: 60%;margin-top: 21%"> 成绩：{{GradeState}}</text>
+	</view>
+
+	
+	
+</page>

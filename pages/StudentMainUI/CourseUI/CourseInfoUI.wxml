@@ -1,0 +1,18 @@
+<!--pages/StudentMainUI/CourseUI/CourseInfoUI.wxml-->
+<page class="body">
+	<view class="head20">
+	<text class="FONT1"> OOAD</text>
+	</view>
+<view  style="margin-top: 15%;">
+	<image class="img3" src="http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp7q4n4j20p10p1mxl.jpg"  alt=""/>
+<text class="FONT3">老师：{{TeacherName}}</text>
+</view>
+	<view style="margin-top: 4%;"> 
+		<image class="img4" src="http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp7q4n4j20p10p1mxl.jpg" alt="" />
+		<text class="FONT3">邮箱：{{Mail}}</text>
+	</view>
+	<view style="margin-top: 4%;"> 
+		<image class="img6" src="http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp7q4n4j20p10p1mxl.jpg" alt=""/>
+		<text class="FONT3">简介：</text>
+	</view>
+</page>

@@ -1,0 +1,16 @@
+<!--pages/StudentMainUI/CourseUI/SeminarUI.wxml-->
+<page class="page">
+  <view class="topView">
+    <span class="title"> {{CourseName}}</span>
+    <span class="titleSmall"> {{SenimarID}}</span>
+  </view>
+  <view class="ScoreBoxBlue" bindtap='ChooseGrade'>
+    <span class="ButtonTextRight" style="margin-top: 100%">打分</span>
+  </view>
+  <view class="CallBoxBlue" bindtap='ChooseRollCall'>
+    <span class="ButtonTextLeft">签到</span>
+  </view>
+  <view class="GroupBoxBlue" style="float: " bindtap='ChooseGroup'>
+    <span class="ButtonTextLeft">组队和选题</span>
+  </view>
+</page>

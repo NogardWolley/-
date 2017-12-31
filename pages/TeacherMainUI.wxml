@@ -1,0 +1,14 @@
+<page>
+  <view class="box5" style="position:relative;" bindtap='PersonalInfo'>
+    <!-- 背景图的view -->
+    <image class="img2" src="http://wx3.sinaimg.cn/small/9bba9548gy1fm6vp2k8llj20sg0hiago.jpg"  />
+    <image class="img1" src="http://wx1.sinaimg.cn/small/9bba9548gy1fm6vp7q4n4j20p10p1mxl.jpg"  />
+    <view class="FONT4 personName">姓名：{{TeacherName}}</view>
+
+    <view class="FONT4 number">教工号：{{TeacherNumber}}</view>
+  </view>
+
+<view wx:for="{{Classes}}" class="box3" bindtap="ChooseClass" data-i="{{index}}">
+    <text class="FONT1"> {{item}}</text>
+</view>
+</page>
